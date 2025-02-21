@@ -35,7 +35,7 @@ while (numSticks >0)
     int selectedSticks = Convert.ToInt32(Console.ReadLine());
     while (true)
     {
-        if (selectedSticks > maxSticks) // Step Seven
+        if (selectedSticks > maxSticks || selectedSticks < 0) // Step Seven
         {
             Console.Write("That is not a valid number, pick again: ");
             selectedSticks = Convert.ToInt32(Console.ReadLine());
